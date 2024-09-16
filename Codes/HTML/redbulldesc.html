@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-Bull</title>
+    <link rel="stylesheet" href="/Codes/CSS/productdesc.css">
+
+    <style>
+        body {
+            background-image: url(/Images/drinksdescbg.png);
+            background-size: cover ;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- header starts from here -->
+  <header>
+    <!-- nav bar -->
+    <nav class="menubar">
+      <div class="logo" ><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+       <div class="navbar"> 
+      <ul>
+       <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/blog.html">Blog</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/research.html">Research</a></button></li>
+       <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+      </div>
+      </ul>
+    </div>
+    </nav>
+    
+    </nav>
+  </header>
+
+<!-- return button -->
+<div class="return"><a href="/Codes/HTML/veg.html"> <img src="/Images/returnicon.png" height="25px"> </div></a>
+<!-- product description -->
+<div class="centeralign">
+    <div class="out-of-stock">Out of Stock</div> 
+    <section id="products">
+        
+        <div class="product">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <!--product images -->
+                    <img src="/Images/redbull1.png" alt="Red-Bull 1">
+                    <img src="/Images/redbull.png" alt="Red-Bull 2">
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>Red-Bull</h2>
+                <br>
+                <p>Energize your day with the iconic energy drink, packed with a boost of vitality and focus.</p>
+                <br>
+                <p><strong>Price:</strong><b style="color: red;"> रु 199 per pcs</b></p>
+                <br>
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                </div>
+                <br>
+                <div class="quantity-selector">
+                    <label for="quantity-carrot">Quantity:</label>
+                    <input type="number" id="quantity-carrot" name="quantity" min="1" value="1">
+                </div>
+                <div class="buttons">
+                    
+                    <button  class="buy-now" style="color: rgb(255, 0, 0); background-color: whitesmoke;">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="/Codes/JavaScript/script2.js"></script>
+
+</body>
+</html>

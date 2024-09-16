@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk</title>
+    <link rel="stylesheet" href="/Codes/CSS/productdesc.css">
+
+    <style>
+        body {
+            background-image: url(/Images/Dairyproductsdescbg.png);
+            background-size: cover ;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- header starts from here -->
+  <header>
+    <!-- nav bar -->
+    <nav class="menubar">
+      <div class="logo" ><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+       <div class="navbar"> 
+      <ul>
+       <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/blog.html">Blog</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/research.html">Research</a></button></li>
+       <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+      </div>
+      </ul>
+    </div>
+    </nav>
+    
+    </nav>
+  </header>
+
+
+<!-- Main content section -->
+<div class="centeralign">
+    <!-- Product information -->
+    <section id="products">
+        <!-- Product details -->
+        <div class="product">
+            <!-- Slideshow container for product images -->
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="/Images/milk.png" alt="Milk 1">
+                    <img src="/Images/milk2.png" alt="Milk 2">
+                </div>
+            </div>
+
+            <!-- Product details including name, description, price, rating, quantity selector, and buy button -->
+            <div class="product-details">
+                <h2>Milk</h2>
+                <br>
+                <p>Local, fresh milk for all your needs: from morning coffee to creamy desserts.</p>
+                <br>
+                <p><strong>Price:</strong> रु 99 per ltr</p>
+                <br>
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <br>
+                <div class="quantity-selector">
+                    <label for="quantity-carrot">Quantity:</label>
+                    <input type="number" id="quantity-carrot" name="quantity" min="1" value="1">
+                </div>
+                <div class="buttons">
+                    <!-- Buy Now button -->
+                    <a href="/Codes/HTML/validform.html"> <button  class="buy-now">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- JavaScript script file -->
+<script src="/Codes/JavaScript/script2.js"></script>
+</body>
+</html>

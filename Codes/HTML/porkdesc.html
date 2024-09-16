@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pork</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="/Codes/CSS/productdesc.css">
+
+    <style>
+        body {
+            /* Background image for the body */
+            background-image: url(/Images/meatdescbg.png);
+            background-size: cover ;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- header starts from here -->
+  <header>
+    <!-- nav bar -->
+    <nav class="menubar">
+      <div class="logo" ><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+       <div class="navbar"> 
+      <ul>
+       <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/blog.html">Blog</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/research.html">Research</a></button></li>
+       <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+      </div>
+      </ul>
+    </div>
+    </nav>
+    
+    </nav>
+  </header>
+
+<div class="centeralign">
+    <!-- Out of stock notification -->
+    <div class="out-of-stock">Out of Stock</div> 
+    <!-- Product section -->
+    <section id="products">
+        <div class="product">
+            <!-- Slideshow container for product images -->
+            <div class="slideshow-container">
+                <div class="slides">
+                    <!-- Product images -->
+                    <img src="/Images/pork1.png" alt="Pork 1">
+                    <img src="/Images/pork2.png" alt="Pork 2">
+                </div>
+            </div>
+
+            <!-- Product details -->
+            <div class="product-details">
+                <!-- Product name -->
+                <h2>Pork</h2>
+                <br>
+                <!-- Product description -->
+                <p>Savor the excellence of our premium pork! Perfect for grilling, roasting, or adding a delicious twist to your recipes.</p>
+                <br>
+                <!-- Product price -->
+                <p><strong>Price:</strong><b style="color: red;"> रु 420 per kg</b></p>
+                <br>
+                <!-- Product rating -->
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <br>
+                <!-- Quantity selector -->
+                <div class="quantity-selector">
+                    <label for="quantity-carrot">Quantity:</label>
+                    <input type="number" id="quantity-carrot" name="quantity" min="1" value="1">
+                </div>
+                <!-- Buy now button -->
+                <div class="buttons">
+                    <button  class="buy-now" style="color: rgb(255, 0, 0); background-color: whitesmoke;">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- JavaScript file -->
+<script src="/Codes/JavaScript/script2.js"></script>
+</body>
+</html>

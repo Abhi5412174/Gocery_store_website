@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango</title>
+    <!-- Link to the CSS stylesheet -->
+    <link rel="stylesheet" href="/Codes/CSS/productdesc.css">
+
+    <!-- Styling for the body background -->
+    <style>
+        body {
+            background-image: url(/Images/fruitsdescbg.png);
+            background-size: cover ;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- Header section containing navigation bar -->
+
+  <header>
+    <!-- nav bar -->
+    <nav class="menubar">
+      <div class="logo" ><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+       <div class="navbar"> 
+      <ul>
+       <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/blog.html">Blog</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/research.html">Research</a></button></li>
+       <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+      </div>
+      </ul>
+    </div>
+    </nav>
+    
+    </nav>
+  </header>
+
+
+<!-- Main content section -->
+<div class="centeralign">
+    <!-- Notification for out-of-stock -->
+    <div class="out-of-stock">Out of Stock</div> 
+    <section id="products">
+        <!-- Product details -->
+        <div class="product">
+            <!-- Slideshow container for product images -->
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="/Images/mango1.png" alt="Mango 1">
+                    <img src="/Images/mango2.png" alt="Mango 2">
+                </div>
+            </div>
+            <!-- Product details including name, description, price, rating, quantity selector, and buy button -->
+            <div class="product-details">
+                <h2>Mango</h2>
+                <br>
+                <p>A juicy tropical fruit with a sweet and tangy flavor, commonly enjoyed fresh and in beverages.</p>
+                <br>
+                <p><strong>Price:</strong><b style="color: red;"> रु 100 per kg</b></p>
+                <br>
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <br>
+                <div class="quantity-selector">
+                    <label for="quantity-carrot">Quantity:</label>
+                    <input type="number" id="quantity-carrot" name="quantity" min="1" value="1">
+                </div>
+                <div class="buttons">
+                    <!-- Buy Now button with custom styling -->
+                    <button  class="buy-now" style="color: rgb(255, 0, 0); background-color: whitesmoke;">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- JavaScript script file -->
+<script src="/Codes/JavaScript/script2.js"></script>
+
+</body>
+</html>

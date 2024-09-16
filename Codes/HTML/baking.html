@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Codes/CSS/products.css">
+ 
+    <!-- Internal CSS -->
+    <style>
+        body{
+            background-image: url(/Images/bakingbg.png);
+            background-size:cover ;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="menubar">
+            <!-- Logo -->
+            <div class="logo"><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+            <!-- Navigation Menu -->
+            <div class="navbar"> 
+                <ul>
+                    <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+                    <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+                    <li><button class="button"><a href="blog.html">Blog</a></button></li>
+                    <li><button class="button"><a href="research.html">Research</a></button></li>
+                    <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Section -->
+    <section>
+        <!-- Product 1 -->
+        <div class="product">
+            <div class="product-image">
+                <div class="out-of-stock">Out of Stock</div>
+                <a href="/Codes/HTML/bundesc.html"><img src="/Images/bun.png" alt="Bun"></a>
+            </div>
+            <div class="product-details">
+                <h2>Bun</h2>
+                <p>Soft, fluffy buns perfect for any sandwich or burger. Freshly baked daily for your enjoyment.</p>
+                <br>
+                <p><b>रु 99 <sub> per pkt</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <div class="product-image">
+                <div class="discount">-5%</div>
+                <a href="/Codes/HTML/breaddesc.html"><img src="/Images/Bread.png" alt="Bread"></a>
+            </div>
+            <div class="product-details">
+                <h2>Bread</h2>
+                <p>Delicious artisanal bread, freshly baked every day. Taste the difference with each slice.</p>
+                <br>
+                <p><s>रु 50</s></p>
+                <p><b>रु 47.5<sub> per pkt.</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <!-- More products -->
+        <div class="product">
+            <div class="product-image">
+                <a href="/Codes/HTML/muffindesc.html">  <img src="/Images/muffins.png" alt="Muffin"></a>
+            </div>
+            <div class="product-details">
+                <br><!-- product description -->
+                <h2>Muffin</h2>
+                <p>Indulge in our freshly baked muffins, bursting with flavor. The perfect treat for any time of day.</p>
+                <br>
+                <p><b>रु 99 <sub> per pkt</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <a href="/Codes/HTML/creamrolldesc.html"> <img src="/Images/creamroll.png" alt="creamroll"></a>
+            </div>
+            <div class="product-details">
+                <!-- product description -->
+                <h2>Cream Roll</h2>
+                <p>Fluffy pastry hugs luscious cream, a delightful treat in every bite.</p>
+                <br>
+                <p><b>रु 59<sub> per pkt</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <div class="out-of-stock">Out of Stock</div>
+                <a href="/Codes/HTML/cookiesdesc.html">  <img src="/Images/cookies.png" alt="Cookies"></a>
+            </div>
+            <div class="product-details">
+                <!-- product description -->
+                <h2>Cookies</h2>
+                <p>Crunchy on the outside, soft on the inside. Treat yourself to a moment of sweetness.</p>
+                <br>
+                <p><b>रु 49<sub> per pkt.</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <a href="/Codes/HTML/pizzafrozzendesc.html"><img src="/Images/pizza.png" alt="Pizza"></a>
+            </div>
+            <div class="product-details">
+                <!-- product description -->
+                <h2>Pizza (Frozen)</h2>
+                <p>Crave-worthy pizzas with a perfect balance of toppings and cheese. Taste the difference.</p>
+                <br>
+                <p><b>रु 499<sub> per pcs.</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+         <div class="product">
+            <div class="product-image">
+                <a href="/Codes/HTML/donutsdesc.html"> <img src="/Images/doughnut.png" alt="Doughnut"></a>
+            </div>
+            <div class="product-details">
+                <!-- product description -->
+                <h2>Donuts</h2>
+                <p>Indulge in our heavenly doughnuts, glazed to perfection. A sweet escape in every bite.</p>
+                <br>
+                <p><b>रु 99<sub> per pkt</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <a href="/Codes/HTML/waffledesc.html">  <img src="/Images/waffles.png" alt="Waffle"></a>
+            </div>
+            <div class="product-details">
+                <!-- product description -->
+                <h2>Waffle</h2>
+                <p>Crisp, golden grids cradle sweet or savory toppings, a breakfast favorite worldwide.</p>
+                <br>
+                <p><b>रु 80<sub> per pkt</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- add to cart to add items in cart -->
+        <div class="add-to-cart">
+            <img src="/Images/cartanimatedicon.gif" alt="Add to Cart" id="cartIcon">
+            <span id="cartItemCount" class="cart-item-count">0</span> <!-- Cart item count badge -->
+            <div class="cart-items" id="cartItems"></div>
+        </div>
+    
+        <!-- external JavaScript -->
+        <script src="/Codes/JavaScript/script2.js"></script>
+    </section>
+  
+
+      <!-- footer section -->
+  <footer class="footer" id="footer">
+    <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>
+           Company
+        </h4>
+        <ul>
+          <li> <a href="aboutus.html">About Us</a></li>
+          <li> <a href="/Codes/HTML/research.html">Research</a></li>
+          <li> <a href="/Codes/HTML/blog.html">Blog</a></li>
+          <li> <a href="/Codes/HTML/allproducts.html">Products</a></li>
+          <li> <a href="#">our services</a></li>
+          <li> <a href="#">privacy policy</a></li>
+          
+         
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>
+            Get Help
+        </h4>
+        <ul>
+          <li> <a href>FAQ</a></li>
+          <li> <a href>shipping</a></li>
+          <li> <a href>returns</a></li>
+          <li> <a href>order status</a></li>
+          <li> <a href="https://esewa.com.np/#/home" target="_main">payment options</a></li>
+        </ul>
+      </div>
+     
+      <div class="footer-col">
+        <h4>
+            Online shop
+        </h4>
+        <ul>
+          <li><a href="fruits.html">Fruits</a></li>
+          <li><a href="cookiesdesc.html">Cookies</a></li>
+          <li><a href="meat.html">Sea foods</a></li>
+          <li><a href="drinks.html">Fresh Juices</a></li>
+            
+           
+         
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer-col">
+      <h4>
+         Follow us
+      </h4>
+      <div class="Social-links">
+     
+        <div class="social-links"> 
+          <a href><img src="/Images/facebook.png" class="iconsnew6"></a>
+          <a href><img src="/Images/instagram.png" class="iconsnew6"></a>
+          <a href><img src="/Images/twitter.png" class="iconsnew6"></a>
+          <a href><img src="/Images/linked in.png" class="iconsnew6"></a>
+          <a href><img src="/Images/tiktok.png" class="iconsnew6"></a>
+          <a href><img src="/Images/github.png" class="iconsnew6"></a>
+          
+          
+        </div>
+     
+    </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="report">
+  <h2>Upgrade To Premium :</h2>
+  <br>
+  <br>
+  <div class="subscribe">
+  <form action="#" method="post">
+      <label for="email">Email Address :</label>&nbsp;
+      <input type="email" id="email" name="email" required>&nbsp;&nbsp; 
+      <input type="submit" value="Subscribe" id="subscribe">
+  </form>
+</div>
+  <br>
+  <br>
+  <!-- feed section -->
+  <div class="review">
+  <h2>Write a Review :</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <form action="#" method="post">
+    
+      <label for="review">Your Review :</label>&nbsp;&nbsp;
+      <div class="textarea"><textarea id="review" name="review" rows="16" placeholder=" &nbsp; Your answer :" required style="position:absolute;height:200px;width:50%;margin-top:-60px;border-radius:20px"></textarea></div>
+      <input type="submit" value="Submit Review" style="position:absolute;right:460px;border-radius:5px;" id="submit">
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</div>
+<br>
+  <br>
+  <br>
+  
+<hr>
+ <p style="color:white"><span style="color:white ;font-size:30px">&copy; </span>&nbsp; [2024], GreenGrocers, Inc. All rights reserved.</p>
+</div>
+  </footer>
+</body>
+</html>

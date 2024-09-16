@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/Codes/CSS/style.css">
+ 
+    <style>
+     /* internal css  */
+      input[type="number"] {
+          width: 50px;
+          text-align: center;
+      }
+      button {
+          padding: 5px 10px;
+          cursor: pointer;
+      }
+      #cartContainer {
+          position:absolute; 
+          top: 100px; 
+          right: 100px;
+          font-size: 18px;
+          
+        
+      }
+      #cartIcon {
+          font-size: 24px;
+          margin-right: 5px;
+          
+      }
+      #cartCount {
+        position: absolute;
+    top: 8px;
+    right: 150px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0px 6px;
+    font-size: 15px;
+    transform: translate(50%, -50%);
+    height:22px;
+    width: 22px;
+  
+
+      }
+      .search-container {
+  display: flex;
+  padding-top:10px;
+  margin-bottom: 10px;
+  margin-left:110px;
+  width:600px;
+  
+}
+
+#search-input {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color:rgba(98, 182, 95, 0.753);
+  
+  border: none;
+  color: white;
+  padding: 2px 10px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+ 
+  background-color:white;
+  
+}
+#category-dropdown {
+    display: none; 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 100;
+
+  
+
+  }
+
+  #category-dropdown li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    transition:smooth 2s;
+   
+  }
+
+  #category-dropdown li:hover {
+    background-color:rgba(98, 182, 95, 0.753);
+    color: aliceblue;
+  }
+  .container2 {
+    max-width: 800px;
+    margin-top: 40px;;
+    padding: 20px;
+    position:absolute;
+    margin-bottom: 1000px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  .container2 h1{
+    color:White;
+    font-size:50px;
+  }
+  .centered-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2.5px 1px 1px #000;
+    
+  }
+  .left-list {
+    margin-left: 0;
+    padding-left: 20px;
+    padding:20px;
+  }
+  .left-list {
+    margin-left: 0;
+    padding-left: 20px;
+    list-style: inside; /* Show bullets inside the list */
+  }
+  .left-list li {
+    text-decoration: inherit; /* Inherit text decoration from the body */
+    padding:30px;
+    color:white;
+    text-shadow: 1.5px 1px 1px #000;
+  }
+  .blog{
+    justify-content:center;
+    text-align:center;
+    text-align:center;
+    margin-top:20px;
+  }
+  .blog p{
+    padding:60px 200px;
+    font-size:20px;
+  }
+  .blog h3{
+    font-size:70px;
+    padding:40px;
+    font-weight:500;
+    text-shadow: 1px 1px 4px #000;
+  }
+  .blog ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    padding:0 30px;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  .blog li{
+    float: left;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size:30px;
+    color:rgb(197, 120, 20)
+    
+  }
+  .blog li:hover{
+    transform:translateY(-4px);
+    cursor:pointer;
+  }
+  .icon1{
+    cursor: pointer;
+  }
+
+  
+.review1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid #3a553b;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.all-testimonials{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap ;
+  
+}
+
+
+
+.testimonials-container {
+  margin-bottom: 20px;
+  flex: 1; 
+  
+}
+
+.testimonial {
+  border: px solid #7a9674;
+  padding: 14px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  box-shadow: 0 10px 10px rgba(47, 85, 54, 0.5);
+  webkit-scrollbar {
+   display: none;
+    }
+  
+}
+
+.testimonial img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-style: italic;
+  line-height: 1.4;
+ 
+}
+button{
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: none;
+  transition: all .3s ease-in-out;
+}
+
+
+
+.carousel-view {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+padding: 20  0;
+transition: all 0.25s ease-in;
+}
+
+.carousel-view .testimonial {
+width: 275px;
+padding: 50px 10px;
+display: flex;
+gap: 0 px;
+scroll-behavior: smooth;
+transition: all 0.25s ease-in;
+-ms-overflow-style: none; 
+scrollbar-width: none; 
+overflow: auto;
+scroll-snap-type: x mandatory;
+}
+
+.carousel-view .item-list {
+  max-width: 85vw;
+  width: 85vw;
+  padding: 50px 10px;
+  display: flex;
+  gap: 45px;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+.prev-btn {
+background : none;
+cursor: pointer;
+}
+
+.next-btn {
+cursor: pointer;
+}
+
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+
+.datecolumn {
+  color: white;
+  border: 1px solid rgb(146, 211, 229);
+  border-radius: 10px;
+  padding: 10px;
+}
+.datecolumn h3 span{
+  color: white;
+}
+
+
+</style>
+
+</head>
+<body>
+  
+   <!-- header starts here -->
+    <header >
+       <!-- our navigation section starts here -->
+       <nav class="menubar" id="menubar">
+        <div class="logo" ><a href="#"><img src="/Images/FinalLogo.png" width="100px" height="65px" id="image"></a></div>
+         <div class="navbar"> 
+        <ul>
+         <li><button  class="button"><a href="#" >Home</a></button></li>
+         <li><button class="button"><a href="/Codes/HTML/allproducts.html">Products</a></button></li>
+         <li><button class="button"><a href="blog.html">Blog</a></button></li>
+         <li><button class="button"><a href="/Codes/HTML/research.html">Research</a></button></li>
+         <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+        </div>
+        </ul>
+      </div>
+    
+      
+      </nav>
+      <!-- search bar section -->
+     <div class="searchbar">
+     
+        <li><button class="button2" onclick="toggleDropdown()"><a href="#">Categories&nbsp;<img src="/Images/caret-down.png" class="iconsnew3"></a></button></li>
+
+         <!-- internal JS -->
+        <script>
+            // Function to toggle dropdown visibility
+            function toggleDropdown() {
+              var dropdown = document.getElementById("category-dropdown");
+              if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+              } else {
+                dropdown.style.display = "none";
+              }
+            }
+          
+          </script>
+        
+        </li>
+        <li> <div class="search-container">
+          <input type="text" id="search-input" placeholder="What are you looking for?">
+          <button class="search-button" onclick="search()"><img src="/Images/search.png" class="iconsnew2"></button>
+        </div>
+        </li>
+        <a href="validform.html" ><span class="icon1"><img src="/Images/usericon.png" class="iconsnew"></a></span>
+        <li><span class="icon2" style="color: rgb(229, 195, 4); font-size: 25px;">&#10084;</span></li>
+        
+       
+     
+      </ul>
+      <ul id="category-dropdown">
+        <li ><a href="/Codes/HTML/veg.html">Vegetables</a></li>
+        <li ><a href="/Codes/HTML/meat.html">Non-Veg</a></li>
+        <li><a href="/Codes/HTML/household.html">Household items</a></li>
+        <li><a href="/Codes/HTML/drinks.html">Fresh Juices</a></li>
+        <li><a href="/Codes/HTML/Others.html">Packet Items</a></li>
+        <li><a href="/Codes/HTML/fruits.html">Fresh Fruits</a></li>
+        <li><a href="/Codes/HTML/dairyproducts.html">Dairy Products</a></li>
+        <li><a href="/Codes/HTML/baking.html">Baking</a></li>
+      </ul>
+     </div>
+   
+     
+    </header>
+    <!-- cart function which is fixed and which will move down the searchbar -->
+    <div>
+      <div id="cartContainer">
+        <a href="" ><img src="/Images/cartanimatedicon.gif" class="iconsnew4"></a>
+        <span id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- parallax section for image movement effect -->
+     <div class="parallax">
+      <img src="/Images/hill1.png" id="hill1" > 
+      <img src="/Images/hill2.png" id="hill2" >
+      <img src="/Images/hill3.png" id="hill3" >
+      <img src="/Images/hill4.png" id="hill4">
+      <img src="/Images/hill5.png" id="hill5" >
+      <img src="/Images/tree.png" id="tree">
+     
+      <img src="/Images/leaf1.png" id="leaf" style="z-index: 1;">
+      
+      <img src="/Images/plant.png" id="plant" style="z-index:1;">
+      <h2 id="text" style="z-index: 1;">We Deliver Freshness</h2>
+      <script src="/Codes/JavaScript/script.js"></script>
+    </div>
+     </section>
+   
+     <!-- our feature section -->
+  <section class=features>
+    <h1 class="heading" id="main-heading">Our Features</h1>
+     <div class="box-container">
+    <div class="box">
+      <img src="/Images/vectorfresh.png">
+      
+      <h3>Fresh And Organic</h3>
+     <p>"Discover Green grocer's dedication to freshness and organic quality. From farm to table, our selection of fresh and organic goods ensures you enjoy nature's finest flavors with every purchase."</p>
+      <button class="btn"><a href="#">Read more</a></button>
+    </div>  
+
+    <div class="box">
+      <img src="/Images/vector-deliver.png">
+      <h3> Fast Delivery</h3>
+      <p>"Experience lightning-fast delivery services at Green Grocers. With our swift logistics network, your orders reach you in record time, ensuring your satisfaction and convenience every step of the way."</p>
+      <button class="btn"><a href="#">Read more</a></button>
+    </div>  
+
+
+    <div class="box">
+      <img src="/Images/vector_payment-removebg-preview.png">
+      <h3>Payment Options</h3>
+      <p>"At Green Grocers, we understand convenience matters. That's why we offer multiple payment options, Choose the method that suits you best and shop with ease."
+
+
+
+
+
+      </p>
+      <!-- our button section -->
+      <button class="btn"><a href="#">Read more</a></button>
+    </div>  
+     </div>
+     </section>
+     <!-- section for inserting hovering image -->
+    <div class="pngegg">
+       
+    </div>
+   <!-- section for featured products -->
+    <section class="div2">
+      
+      <h2 id="pop-up-heading">Featured Products</h2>
+    <div class="container">
+    
+     <div class="products">
+      <a href=""><img src=""></a>
+       <div class="layer">
+      <form class="quantityForm">
+
+    </form>
+      
+  </div>
+
+     </div>
+     <div class="products">
+       <a href="/Codes/HTML/tomatodesc.html"><img src="/Images/tomato1.png"></a>
+       <div class="layer">
+       <form class="quantityForm">
+      
+        
+       
+    </form>
+  </div>
+     </div>
+     <div class="products">
+      <a href="/Codes/HTML/appledesc.html"><img src="/Images/apple.png"></a>
+      <div class="layer">
+      <form class="quantityForm">
+       
+       
+        
+    </form>
+  </div>
+     </div>
+    
+     <div class="products">
+      <a href="/Codes/HTML/dairymilkdesc.html"><img src="/Images/dairyMilk.png"></a>
+   
+     </div>
+     <div class="products">
+      <a href="/Codes/HTML/cocacoladesc.html"><img src="/Images/cokacola.png"></a>
+
+     </div>
+     <div class="products">
+      <a href="/Codes/HTML/mangodesc.html"><img src="/Images/mango.png"></a>
+ 
+    </form>
+   
+
+
+    </div>
+   
+    
+   
+  </section>
+  <!-- functioin for button -->
+</div>
+</div>
+<div class="containerbtnlarge">
+ <a href="/Codes/HTML/allproducts.html" class="btnlarge">Shop Now</a>
+</div>
+<!-- for background hover image -->
+  <div class="bgimg"></div>
+  <section class="aboutus" id="aboutus">
+  
+    
+    <div class="about-container">
+      <div class="profile-image">
+        <img src="/Images/FinalLogo.png" alt="Logo" />
+        <h1>Why Green Grocers?</h1>
+      </div>
+      <!-- our description section compiled for about us reference -->
+      <div class="description">
+        <p>
+          &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   Green Grocer's website provides an extensive product range, advanced search capabilities, detailed product information, smooth checkout, diverse payment options, personalized accounts, enticing promotions, mobile-friendly design, store locator functionality, newsletter subscriptions, social media integration, and responsive customer support, ensuring a seamless and rewarding grocery shopping experience.
+        </p>
+      </div>
+
+      <div class="projects-container">
+        <div class="project">
+          <h3 class="project-name">Global Reach</h3>
+          <div class="project-number global-reach">0</div>
+        </div>
+
+        <div class="project">
+          <h3 class="project-name">Years Served</h3>
+          <div class="project-number years-served">0</div>
+        </div>
+      </div>
+
+      <h2 class="our-team-heading">Our Team</h2>
+
+      <div class="our-team">
+        <div class="team-member">
+          <img src="/Images/Hero.jpg" style="height: 300px; width: auto;" alt="Utkrist" />
+          <div class="designation">
+            <strong>Utkrist Shahi Thakuri</strong> (Home Page)
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="/Images/Abhishek.jpg" style="height:300px; width: auto;"alt="Abhishek" />
+          <div class="designation">
+            <strong>Abhishek Sharma</strong> (Product Page)
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="/Images/Dipti.jpg" style="height:300px; width: auto;" alt="Deepti" />
+          <div class="designation">
+            <strong>Deepti Dhungana</strong> (Blog Page)
+          </div>
+        </div>
+         <div class="team-member">
+          <img src="/Images/Roshana.png.jpg" style="height:300px; width: auto;" alt="Roshana" />
+          <div class="designation">
+            <strong>Roshana Karki</strong> (Research Page)
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="/Images/khushi.jpg"style="height:300px; width: auto;" alt="Khusi" />
+          <div class="designation">
+            <strong>Khushi Bohora</strong> (About US Page)
+          </div>
+        </div>
+      </div>
+
+      <div class="our-mission">
+        <img class="quote-icon" src="images/quote-icon.png" alt="" />
+        <p class="mission-text">"In every bite, taste our commitment to quality and service." - Green Grocers</p>
+      </div>
+    </div>
+
+    <!-- internal JS for making counter effect -->
+    <!-- function for making the counter effect -->
+    <script>
+      const missionDiv = document.getElementById("aboutus");
+      let effectTriggered = false; // Flag to track if the effect has been triggered
+      
+      const options = {
+        root: null,
+        rootMargin: "200px", // Increase the root margin to start observing earlier
+        threshold: 0.5,
+      };
+      
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !effectTriggered) {
+            // Start your animation or effect here
+            const globalReach = document.querySelector(".global-reach");
+            const yearsServe = document.querySelector(".years-served");
+            let globalCounter = 0;
+            let yearsCounter = 0;
+      
+            const updateCounters = () => {
+              if (globalCounter < 27) {
+                globalCounter++;
+                globalReach.innerHTML = globalCounter;
+              }
+              if (yearsCounter < 15) {
+                yearsCounter++;
+                yearsServe.innerHTML = yearsCounter;
+              }
+            };
+      
+            updateCounters(); // Call the function immediately
+      
+            setInterval(updateCounters, 80); // Change the interval duration as needed
+      
+            // Set the flag to true to prevent further triggers
+            effectTriggered = true;
+      
+            // Stop observing once the effect has been triggered
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+      
+      observer.observe(missionDiv);
+      </script>
+</section>
+<!-- button section for connecting to about us -->
+<div class="containerbtnlarge">
+  <a href="aboutus.html" class="btnlarge">Know US</a>
+ </div>
+ <div class="deliveryboy"></div>
+ <div class="blog">
+  <ul>
+   <li>Fast Delivery</li>
+  
+   <li>Use of Internet</li>
+   <li>Proper Research</li>
+ </ul>
+ <p>"Green Grocers revolutionizes the grocery shopping experience by seamlessly integrating physical and online realms. Alongside its physical store, it operates as an extensive online information hub, offering detailed product information, nutritional insights, and recipe suggestions. This digital component enhances convenience, empowering customers to make informed choices whether they're browsing in-store or online."</p>
+
+
+
+
+
+ <h3>Read our Blog</h3>
+ </div>
+ <div class="containerbtnlarge">
+  <a href="blog.html" class="btnlarge">Explore Now</a>
+ </div>
+ <div class="man"></div>
+ <!-- section for displaying the heroic deeds we did -->
+<section class="bglg">
+
+ <div class="container2">
+  <h1 class="centered-heading">Still Not Satisfied?</h1>
+  <ul class="left-list">
+    <li> Social Responsibility Initiatives: Green Grocer has consistently engaged in philanthropic efforts, donating significant funds and resources to various global causes such as disaster relief, education initiatives, and healthcare access in underserved communities.</li>
+    
+    <li>Green Grocers has empowered local communities around the world by providing economic opportunities, supporting small businesses, and fostering entrepreneurship through initiatives such as micro-financing and skills development programs.</li>
+    
+    <li>Humanitarian Aid: In times of crisis, Green Grocer has swiftly responded with humanitarian aid, providing emergency supplies, shelter, and support to communities affected by natural disasters, conflicts, and other emergencies.</li>
+    
+    
+  </ul>
+ </div>
+ </div>
+</section>
+<div class="review1" >
+  <div class="box">
+    <!-- customer review -->
+    <h1>What our Customers says!</h1>
+    <div class="all-testimonials"> 
+        <div class="carousel-view">
+          <button id="prev-btn" class="prev-btn">
+            <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+              <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+            </svg>
+          </button>
+          <div class="item-list" id="item-list">
+            <div class="testimonials-container">
+              <div id="testimonial" class="testimonial" >
+                <img  src="/Images/happy grandpa.jpg" width="100" height="100">
+                <div class="name"> Aniket Khadka</div>
+                <div class="stars">
+                  <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9734;</span>
+                      <span>&#9734;</span>
+                </div>
+                <p>"Lightning-fast service paired with fresh, organic delights. A winning combo!"</p>
+              </div>
+            </div>
+            
+            <div class="testimonials-container">
+              <div class="testimonial">
+                <img src="/Images/happy mom daughter duo.jpg" width="100" height="100">
+                <div class="name">Anjina Bhattrai</div>
+                <div class="stars">
+                  <span>&#9733;</span>
+                  <span>&#9733;</span>
+                  <span>&#9733;</span>
+                  <span>&#9733;</span>
+                  <span>&#9733;</span>
+                </div>
+                <p>"Speedy service and top-notch organic fare! Couldn't be more happier"</p>
+              </div>
+            </div>
+            
+            <div class="testimonials-container">
+              <div class="testimonial">
+                <img src="/Images/happy sisterr.jpg" width="100" height="100">
+                <div class="name">Tanisha Raya </div>
+                <div class="stars">
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                </div>
+                <p>"Quick service and farm-fresh organic goodies make for a delightful experience!"</p>
+              </div>
+            </div>
+            
+            <div class="testimonials-container">
+              <div class="testimonial">
+                <img src="/Images/uncle.jfif" width="100" height="100">
+                <div class="name">Angelia ban</div>
+                <div class="stars">
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                </div>
+                <p>"From clicks to kitchen, this site delivers culinary delight with every order!"</p>
+              </div>
+            </div>
+            
+            <div class="testimonials-container">
+              <div class="testimonial">
+                <img src="/Images/grandmaaa.jfif" width="100" height="100">
+                <div class="name">Perisa giri</div>
+                <div class="stars">
+                  <span>&#9733;</span>
+                  <span>&#9733;</span>
+                  <span>&#9733;</span>
+                  <span>&#9733;</span>
+                  <span>&#9733;</span>
+                </div>
+                <p>"Convenient, reliable, and always my go-to for grocery needs!"</p>
+              </div>
+            </div>
+
+            <div class="testimonials-container">
+              <div class="testimonial">
+                <img src="/Images/assss.jfif" width="100" height="100">
+                <div class="name">emily</div>
+                <div class="stars">
+                  <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                      <span>&#9733;</span>
+                </div>
+                <p>"Grocery shopping made delightful with this seamless online experience "</p>
+              </div>
+            </div>
+          </div>
+          
+          <button id="next-btn" class="next-btn">
+            <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+              <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+            </svg>
+          </button>
+        </div>
+    </div>
+    <!-- internal JS for Costumers Review -->
+    <Script>
+      const prev = document.getElementById('prev-btn')
+const next = document.getElementById('next-btn')
+const list = document.getElementById('item-list')
+
+const itemWidth = 295;
+const padding = 45;
+
+prev.addEventListener('click', () => 
+{
+    console.log('prev button');
+    list.scrollLeft -= itemWidth + padding;
+    if (list.scrollLeft < 0)
+     {
+        list.scrollLeft = list.scrollWidth - list.clientWidth;
+    }
+});
+
+next.addEventListener('click', () => 
+{
+    console.log('next button');
+    list.scrollLeft += itemWidth + padding;
+    if (list.scrollLeft >= list.scrollWidth - list.clientWidth) {
+        list.scrollLeft = 0;
+    }
+});
+
+function onPageLoad() {
+    setInterval(()=>
+    {
+        next.click();
+    },3000);
+}
+
+window.onload = onPageLoad;
+    </Script>
+
+</div>
+</div>
+
+    <!-- footer section -->
+    <footer class="footer" id="footer">
+      <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>
+             Company
+          </h4>
+          <ul>
+            <li> <a href="aboutus.html">About Us</a></li>
+            <li> <a href="/Codes/HTML/research.html">Research</a></li>
+            <li> <a href="/Codes/HTML/blog.html">Blog</a></li>
+            <li> <a href="/Codes/HTML/allproducts.html">Products</a></li>
+            <li> <a href="#">our services</a></li>
+            <li> <a href="#">privacy policy</a></li>
+            
+           
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>
+              Get Help
+          </h4>
+          <ul>
+            <li> <a href>FAQ</a></li>
+            <li> <a href>shipping</a></li>
+            <li> <a href>returns</a></li>
+            <li> <a href>order status</a></li>
+            <li> <a href="https://esewa.com.np/#/home" target="_main">payment options</a></li>
+          </ul>
+        </div>
+       
+        <div class="footer-col">
+          <h4>
+              Online shop
+          </h4>
+          <ul>
+            <li><a href="fruits.html">Fruits</a></li>
+            <li><a href="cookiesdesc.html">Cookies</a></li>
+            <li><a href="meat.html">Sea foods</a></li>
+            <li><a href="drinks.html">Fresh Juices</a></li>
+              
+             
+           
+          </ul>
+        </div>
+      </section>
+  
+      <div class="footer-col">
+        <!-- social links -->
+        <h4>
+           Follow us
+        </h4>
+        <div class="Social-links">
+       
+          <div class="social-links"> 
+            <a href><img src="/Images/facebook.png" class="iconsnew6"></a>
+            <a href><img src="/Images/instagram.png" class="iconsnew6"></a>
+            <a href><img src="/Images/twitter.png" class="iconsnew6"></a>
+            <a href><img src="/Images/linked in.png" class="iconsnew6"></a>
+            <a href><img src="/Images/tiktok.png" class="iconsnew6"></a>
+            <a href><img src="/Images/github.png" class="iconsnew6"></a>
+            
+            
+          </div>
+       
+      </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="report">
+    <h2>Upgrade To Premium :</h2>
+    <br>
+    <br>
+    <div class="subscribe">
+    <form action="#" method="post">
+        <label for="email">Email Address :</label>&nbsp;
+        <input type="email" id="email" name="email" required>&nbsp;&nbsp; 
+        <input type="submit" value="Subscribe" id="subscribe">
+    </form>
+  </div>
+    <br>
+    <br>
+    <!-- feed section -->
+    <div class="review">
+    <h2>Write a Review :</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    <form action="#" method="post">
+      
+        <label for="review">Your Review :</label>&nbsp;&nbsp;
+        <div class="textarea"><textarea id="review" name="review" rows="16" placeholder=" &nbsp; Your answer :" required style="position:absolute;height:200px;width:50%;margin-top:-60px;border-radius:20px"></textarea></div>
+        <input type="submit" value="Submit Review" style="position:absolute;right:460px;border-radius:5px;" id="submit">
+    </form>
+
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+  </div>
+  <br>
+    <br>
+    <br>
+    <Script>
+      // javascript for displaying current date and time 
+
+// creating method for displaying time 
+setInterval(function () {
+
+// declaring date varialbe
+var date = new Date();
+
+document.getElementById('date').innerHTML = date;
+
+}, 1000); // setting referesh interval of 1 second 
+    </Script>
+       <!-- displaying current date and time -->
+  <div class="datecolumn">
+    <h2>Current date-time:</h1>
+    <h3><span id="date"></span></h2>
+</div>
+    <br>
+  <hr>
+   <p style="color:white"><span style="color:white ;font-size:30px">&copy; </span>&nbsp; [2024], GreenGrocers, Inc. All rights reserved.</p>
+  </div>
+
+    </footer>
+  </body>
+  </html>

@@ -1,0 +1,176 @@
+/* Default styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    scroll-behavior: smooth;
+    transition: smooth 0.3s; /* Consolidated transition property */
+    
+}
+
+/* Header styles */
+
+.menubar {
+    position: relative;
+    text-align: right;
+    background-color: rgb(255, 255, 241);
+    margin-top: 4px;
+    padding: 25px 45px;
+    color: black;
+}
+
+.menubar ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    position: relative;
+}
+
+.menubar li {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: large;
+    font-weight: 500;
+    transition: .5s;
+    font-family: Quicksand;
+}
+
+.button:hover {
+    background-color: rgba(98, 182, 95, 0.753);
+    transform: translateY(3px);
+}
+
+.button:hover a {
+    color: white;
+}
+
+.categories {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+h1 {
+    font-family: Quicksand;
+    color:#2c6a56;
+}
+
+header {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Body styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/Images/leaf.png');
+    background-size:cover;
+    background-position:1px -100px;
+    background-repeat: no-repeat;
+}
+
+/* Table styles */
+
+.table {
+    position: absolute;
+    right: 250px;
+    
+    
+}
+
+.align {
+    margin-top: 175px;
+    position: absolute;
+    right: 250px;
+    
+}
+
+.productnamepre, .productname {
+    transform: translateX(-20%);
+    margin-top: 12px;
+}
+
+a.a, a.b, a.c, a.d, a.e, a.f, a.g, a.h {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    align-items: center;
+}
+
+figcaption {
+    font-family: Quicksand;
+    color:#2d6d59;
+}
+
+/* Image styles */
+
+.a img, .b img, .c img, .d img, .e img, .f img, .g img, .h img {
+    transition: transform 0.3s;
+    margin-right: 100px;
+}
+
+.a:hover img, .b:hover img, .c:hover img, .d:hover img, .e:hover img, .f:hover img, .g:hover img, .h:hover img {
+    transform: scale(1.1);
+}
+
+/* Other styles */
+
+#items {
+    margin-top: 1%;
+}
+
+table {
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: #4a7c59;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Font faces */
+
+@font-face {
+    font-family: Quicksand;
+    src: url(/Fonts/quicksand/Quicksand_Bold.otf);
+}
+
+@font-face {
+    font-family: Quicksand2;
+    src: url(/Fonts/quicksand/Quicksand_Light.otf);
+}
+
+
+
+

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables</title>
+    <link rel="stylesheet" href="/Codes/CSS/products.css">
+
+    <style>
+        body{
+            background-image: url(/Images/vegbg.png);
+            background-size:cover ;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 500px; 
+               
+        }
+
+        .tomatoimage{
+            position: absolute;
+            height: 500px;
+            width: auto;
+            left: 880px;
+            top: 100px;
+            transition: ease 0.3s;  
+
+        }
+        .tomatoimage:hover{
+            transform: scale(1.05);
+        }
+
+        .potatoimage{
+            position: absolute;
+            height: 250px;
+            width: auto;
+            left: 300px;
+            top: 475px;
+            transition: ease 0.3s; 
+        }
+
+        .potatoimage:hover{
+            transform: scale(1.1);
+        }
+
+    </style>
+
+
+</head>
+<body>
+ 
+    <!-- header starts from here -->
+    <header>
+        <!-- nav bar -->
+        <nav class="menubar">
+          <div class="logo" ><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+           <div class="navbar"> 
+          <ul>
+           <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+           <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+           <li><button class="button"><a href="/Codes/HTML/blog.html">Blog</a></button></li>
+           <li><button class="button"><a href="/Codes/HTML/research.html">Research</a></button></li>
+           <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+          </div>
+          </ul>
+        </div>
+        </nav>
+        
+        </nav>
+      </header>
+ 
+<a href="/Codes/HTML/tomatodesc.html"><img src="/Images/tomato2.png" class="tomatoimage"></a>
+<a href="/Codes/HTML/potatodesc.html"> <img src="/Images/patato.png" class="potatoimage"> </a>
+    <section>
+        <!-- all products in Vegetable category -->
+        <div class="product">
+            <div class="product-image">
+                <div class="out-of-stock">Out of Stock</div>
+                <a href="/Codes/HTML/carrotdesc.html"><img src="/Images/carrot.png" alt="Carrot"></a>
+            </div>
+            <div class="product-details">
+                <h2>Carrot</h2>
+                <br><br>
+                <p>Fresh and nutritious. Our carrots are a staple for healthy snacking.</p>
+                <br>
+                <p><B>रु 100 <sub> per kg</sub></b></p>
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <!-- other products in this category -->
+        <div class="product">
+            <div class="product-image">
+                <a href="/Codes/HTML/spanichdesc.html"><img src="/Images/Saag.png" alt="Spanich"></a>
+            </div>
+            <div class="product-details">
+                <br><br><br>
+                <h2>Spinach</h2>
+                <br>
+                <p>A leafy green Vegetable packed with vitamins and minerals, Versatile and nutritious.</p>
+                <br>
+                <p><b>रु 20<sub> per bouquet</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <a href="/Codes/HTML/broccolidesc.html"> <img src="/Images/Broccoli.png" alt="Broccoli"></a>
+            </div>
+            <div class="product-details">
+                <br><br>
+                <!-- name of the product -->
+                <h2>Broccoli</h2>
+                <p>Fresh, vibrant broccoli - a crunchy delight packed with vitamins and antioxidants. Perfect for salads.</p>
+                <br><br>
+                <p><b>रु 150 <sub> per kg</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <div class="discount">-10%</div>
+               <a href="/Codes/HTML/potatodesc.html"><img src="/Images/patato.png" alt="Potato"></a> 
+            </div>
+            <div class="product-details">
+                <h2>Potato</h2>
+                <p>Whether mashed, roasted, or fried, they offer comfort and flavor in every bites.</p>
+                <br><br>
+                <!-- discounted price and original price -->
+                <p><s>रु 70</s></p>
+                <p><b>रु 63<sub> per kg</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <a href="/Codes/HTML/cauliflowerdesc.html"><img src="/Images/Cauliflower.png" alt="Cauliflower"></a>
+            </div>
+            <div class="product-details">
+                <br><br>
+                <h2>Cauliflower</h2>
+                
+                <p>Crisp and versatile cauliflower. Elevate your dishes with our fresh harvest today!</p>
+                <br>
+                <p><b>रु 80<sub> per kg</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" max="10">
+                </div>
+                <!-- add to cart option -->
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <!-- out of stock product -->
+                <div class="out-of-stock">Out of Stock</div>
+                <a href="/Codes/HTML/bittergourddesc.html"><img src="/Images/bittergourd.png" alt="Bitter Gourd"></a>
+            </div>
+            <div class="product-details">
+                <h2>Bitter Gourd</h2>
+            
+                <p>Bold flavor, packed with nutrition. Embrace its unique taste for a healthier you!</p>
+                <br>
+                <p><B>रु 90 <sub> per kg</sub></b></p>
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <div class="discount">-20%</div>
+               <a href="/Codes/HTML/tomatodesc.html"><img src="/Images/tomato1.png" alt="Tomato"></a> 
+            </div>
+            <div class="product-details">
+                <br>
+                <h2>Tomato</h2>
+                <p>Nature's burst of flavor. Add freshness to every meal with our ripe picks!</p>
+                <br><br>
+                <p><s>रु 90</s></p>
+                <p><b>रु 72<sub> per kg</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <a href="/Codes/HTML/peasdesc.html"><img src="/Images/peas.png" alt="Peas"></a>
+            </div>
+            <div class="product-details">
+                <br><br>
+                <h2>Peas</h2>
+                
+                <p>Nature's green jewels. Delight in their sweet pop with every bite!</p>
+                <br>
+                <p><b>रु 99<sub> per kg</sub></b></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="add-to-cart">
+            <img src="/Images/cartanimatedicon.gif" alt="Add to Cart" id="cartIcon">
+            <span id="cartItemCount" class="cart-item-count">0</span> <!-- Cart item count badge -->
+            <div class="cart-items" id="cartItems"></div>
+        </div>
+    
+        <!-- JavaScript -->
+        <script src="/Codes/JavaScript/script2.js" ></script>
+    </section>
+   
+
+    <!-- footer section -->
+    <footer class="footer" id="footer">
+        <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>
+               Company
+            </h4>
+            <ul>
+              <li> <a href="aboutus.html">About Us</a></li>
+              <li> <a href="/Codes/HTML/research.html">Research</a></li>
+              <li> <a href="/Codes/HTML/blog.html">Blog</a></li>
+              <li> <a href="/Codes/HTML/allproducts.html">Products</a></li>
+              <li> <a href="#">our services</a></li>
+              <li> <a href="#">privacy policy</a></li>
+              
+             
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>
+                Get Help
+            </h4>
+            <ul>
+              <li> <a href>FAQ</a></li>
+              <li> <a href>shipping</a></li>
+              <li> <a href>returns</a></li>
+              <li> <a href>order status</a></li>
+              <li> <a href="https://esewa.com.np/#/home" target="_main">payment options</a></li>
+            </ul>
+          </div>
+         
+          <div class="footer-col">
+            <h4>
+                Online shop
+            </h4>
+            <ul>
+              <li><a href="fruits.html">Fruits</a></li>
+              <li><a href="cookiesdesc.html">Cookies</a></li>
+              <li><a href="meat.html">Sea foods</a></li>
+              <li><a href="drinks.html">Fresh Juices</a></li>
+                
+               
+             
+            </ul>
+          </div>
+        </section>
+    
+        <div class="footer-col">
+          <h4>
+             Follow us
+          </h4>
+          <div class="Social-links">
+         
+            <div class="social-links"> 
+              <a href><img src="/Images/facebook.png" class="iconsnew6"></a>
+              <a href><img src="/Images/instagram.png" class="iconsnew6"></a>
+              <a href><img src="/Images/twitter.png" class="iconsnew6"></a>
+              <a href><img src="/Images/linked in.png" class="iconsnew6"></a>
+              <a href><img src="/Images/tiktok.png" class="iconsnew6"></a>
+              <a href><img src="/Images/github.png" class="iconsnew6"></a>
+              
+              
+            </div>
+         
+        </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="report">
+      <h2>Upgrade To Premium :</h2>
+      <br>
+      <br>
+      <div class="subscribe">
+      <form action="#" method="post">
+          <label for="email">Email Address :</label>&nbsp;
+          <input type="email" id="email" name="email" required>&nbsp;&nbsp; 
+          <input type="submit" value="Subscribe" id="subscribe">
+      </form>
+    </div>
+      <br>
+      <br>
+      <!-- feed section -->
+      <div class="review">
+      <h2>Write a Review :</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      <form action="#" method="post">
+        
+          <label for="review">Your Review :</label>&nbsp;&nbsp;
+          <div class="textarea"><textarea id="review" name="review" rows="16" placeholder=" &nbsp; Your answer :" required style="position:absolute;height:200px;width:50%;margin-top:-60px;border-radius:20px"></textarea></div>
+          <input type="submit" value="Submit Review" style="position:absolute;right:460px;border-radius:5px;" id="submit">
+      </form>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+    </div>
+    <br>
+      <br>
+      <br>
+      
+    <hr>
+     <p style="color:white"><span style="color:white ;font-size:30px">&copy; </span>&nbsp; [2024], GreenGrocers, Inc. All rights reserved.</p>
+    </div>
+      </footer>
+    </body>
+    </html>

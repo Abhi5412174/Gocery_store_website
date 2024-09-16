@@ -1,0 +1,518 @@
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  color: black;
+  scroll-behavior: smooth;
+  transition-property: smooth;
+  box-sizing: border-box;
+  font-family: Quicksand; /* Setting default font */
+}
+
+/* Header styles */
+header {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  
+}
+a {
+  text-decoration: none;
+  font-family: Quicksand; /* Setting font for links */
+}
+
+.menubar {
+  position: relative;
+  text-align: right;
+  background-color: rgb(255, 255, 241);
+  margin-top: 0px;
+  padding: 25px 45px;
+  color: black;
+}
+
+.menubar ul {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  transition: 0.5s;
+  position: relative;
+}
+
+.menubar li {
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+}
+
+/* Button styles */
+.button {
+  border: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
+  font-size: large;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: rgba(98, 182, 95, 0.753);
+  transform: translateY(3px);
+}
+
+/* Navigation styles */
+.allcategories a:hover {
+  background-color: rgba(98, 182, 95, 0.753);
+  transform: translateY(3px);
+  border-radius: 5px;
+}
+
+/* Main content container */
+.container1 {
+  position: relative;
+  background-color: rgb(77, 213, 102);
+  height: 300px;
+  display: flex;
+  width: 70%;
+  border-radius: 12px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  right: 10px;
+  left: 200px;
+  top: 40px;
+}
+
+/* Typography */
+.title {
+  font-size: 40px;
+  line-height: 0px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+/* Call-to-action button */
+.know-more {
+  border-radius: 20px;
+  background-color: rgb(212, 159, 34);
+  padding: 8px 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 5px;
+  transition: all 0.2s;
+}
+
+.know-more:hover {
+  background-color: rgb(77, 213, 102);
+  color: black;
+}
+
+/* Navigation container */
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+}
+
+/* Logo with title */
+.logo_with_title {
+  display: flex;
+  gap: 8px;
+  height: 50px;
+}
+
+.logo_with_title > h1 {
+  color: green;
+}
+
+/* Navigation items */
+.nav_items {
+  display: flex;
+  gap: 30px;
+}
+
+.nav_items > a {
+  text-decoration: none;
+  color: green;
+  transition: all 0.2s;
+}
+
+.nav_items > a:hover {
+  color: black;
+}
+
+/* Content title */
+.content_title {
+  text-align: center;
+  color: green;
+  font-size: 40px;
+  margin-bottom: -40PX;
+}
+
+/* Blog card styles */
+.blog_card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 50px;
+  top: 50px;
+}
+
+.card {
+  width: 400px;
+  height: auto;
+  background-color: rgba(188, 188, 192, 0.295);
+  display: flex;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  padding: 12px 8px;
+  transition: transform 0.4s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.card_image {
+  border-radius: 6px;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  transition: ease 0.3s;
+}
+
+.card_image:hover {
+  transform: scale(1.02);
+}
+
+.card_title {
+  font-weight: 600;
+  font-size: 18px;
+  color: green;
+}
+
+.card_subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(117, 165, 45);
+}
+
+.card_button {
+  width: 200px;
+  border: 1px solid green;
+  background-color: transparent;
+  color: green;
+  padding: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card_button:hover {
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+/* Horizontal break */
+.horizontal_break {
+  width: 100%;
+  color: beige;
+}
+
+/* Card metadata */
+.card_metadata {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: green;
+}
+
+.card_metadata > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Impact section */
+.impact-section {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  top: 50px;
+  left: 140px;
+  margin: 20px;
+  width: 80%;
+  height: 20%;
+  gap: 20px;
+}
+
+.positive-impact {
+  background-color: #c3e6cb;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  width: 70%;
+  text-align: justify;
+}
+
+.positive-impact:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.negative-impact {
+  background-color: #f5c6cb;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  width: 70%;
+  text-align: justify;
+}
+
+.negative-impact:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Technology paragraph */
+.techparagraph {
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50PX;
+  padding: 20px;
+  font-family: Quicksand;
+
+}
+
+/* Technology container */
+.tech {
+  width: 80%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 10%;
+  border: 1px solid green;
+  border-radius: 10px;
+  transition: all ease-in-out 0.2s;
+  top: 50px;
+  text-align: justify;
+}
+
+.tech:hover {
+  background-color: rgb(137, 225, 137);
+}
+
+.techparagraph h2 {
+  text-align: center;
+}
+
+/* Conclusion section */
+.conclusion h2 {
+  text-align: center;
+}
+
+.conclusion {
+  position: absolute;
+  margin-top: 640px;
+  padding: 40px;
+  text-align: justify;
+}
+
+/* Footer section */
+footer {
+  position: absolute;
+  width: 1550px;
+  margin-top: 900px;
+  height: auto;
+  right: -140px;
+}
+
+.footer {
+  padding: 120px 0;
+  background: linear-gradient(to right, #3b617a, #9e8983);
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a,
+.fab {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s ease;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5 ease;
+}
+
+.footer-col .social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.footer-col .social-links a:hover .fab {
+  color: #24262b;
+  background: linear-gradient(45deg, #ed1c94, #ffec17);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.report h2 {
+  color: white;
+}
+
+.report form label {
+  color: white;
+}
+
+#email {
+  border-radius: 5px;
+  width: 19%;
+}
+
+#subscribe,
+#submit {
+  border: 4px solid rgb(248, 244, 244);
+  border-radius: 5px;
+  color: black;
+  font-family: Quicksand;
+  transition: ease 0.3s;
+}
+
+#subscribe:hover,
+#submit:hover {
+  transform: translateY(-2px);
+  background-color: rgb(50, 139, 65);
+  color: rgb(196, 224, 201);
+}
+
+.iconsnew6 {
+  height: 25px;
+  width: 25px;
+}
+
+.iconsnew {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: -42px;
+  padding-top: 20px 10px;
+}
+
+.iconsnew4 {
+  color: white;
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+  padding-top: 20px 10px;
+  margin-right: 150px;
+}
+
+.iconsnew2 {
+  height: 25px;
+  width: 25px;
+}
+
+.iconsnew3 {
+  height: 12px;
+  width: 12x;
+}
+
+.icon2 {
+  margin-left: 200px;
+}
+
+.icon1 {
+  margin-left: 0px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* Custom fonts */
+@font-face {
+  font-family: Quicksand;
+  src: url(/Fonts/quicksand/Quicksand_Bold.otf);
+}
+
+@font-face {
+  font-family: Quicksand2;
+  src: url(/Fonts/quicksand/Quicksand_Light.otf);
+}

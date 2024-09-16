@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broccoli Description</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Codes/CSS/productdesc.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-image: url(/Images/productdescbg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- header starts from here -->
+  <header>
+    <!-- nav bar -->
+    <nav class="menubar">
+      <div class="logo" ><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+       <div class="navbar"> 
+      <ul>
+       <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/blog.html">Blog</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/research.html">Research</a></button></li>
+       <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+      </div>
+      </ul>
+    </div>
+    </nav>
+    
+    </nav>
+  </header>
+
+
+<!-- Product Section -->
+<div class="centeralign">
+    <section id="products">
+        
+        <div class="product">
+            <!-- Image Slideshow -->
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="/Images/Broccoli.png" alt="Broccoli 1">
+                    <img src="/Images/Broccoli2.png" alt="Broccoli 2">
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="product-details">
+                <h2>Broccoli</h2>
+                <br>
+                <p>Fresh, vibrant broccoli - a crunchy delight packed with vitamins and antioxidants. Perfect for salads.</p>
+                <br>
+                <!-- Price -->
+                <p><strong>Price:</strong> रु 150 per kg</p>
+                <br>
+                <!-- Rating -->
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <br>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                    <label for="quantity-carrot">Quantity:</label>
+                    <input type="number" id="quantity-carrot" name="quantity" min="1" value="1">
+                </div>
+                <!-- Buy Now Button -->
+                <div class="buttons">
+                    <a href="/Codes/HTML/validform.html"> <button  class="buy-now">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- JavaScript -->
+<script src="/Codes/JavaScript/script2.js"></script>
+
+
+</body>
+</html>

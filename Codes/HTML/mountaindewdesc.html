@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Dew</title>
+    <link rel="stylesheet" href="/Codes/CSS/productdesc.css">
+
+    <!-- internal Styling for the background image -->
+    <style>
+        body {
+            background-image: url(/Images/drinksdescbg.png);
+            background-size: cover ;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- header starts from here -->
+  <header>
+    <!-- nav bar -->
+    <nav class="menubar">
+      <div class="logo" ><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+       <div class="navbar"> 
+      <ul>
+       <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/blog.html">Blog</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/research.html">Research</a></button></li>
+       <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+      </div>
+      </ul>
+    </div>
+    </nav>
+    
+    </nav>
+  </header>
+
+
+
+<div class="centeralign">
+    <!-- Product Details Section -->
+    <section id="products">
+        
+        <div class="product">
+            <!-- Slideshow Container for Product Images -->
+            <div class="slideshow-container">
+                <div class="slides">
+                    <!-- Product Images -->
+                    <img src="/Images/mountaindew.png" alt="mountaindew 1">
+                    <img src="/Images/mountaindew1.png" alt="mountaindew 2">
+                   
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="product-details">
+                <!-- Product Title -->
+                <h2><pre>Mountain Dew             </pre></h2>
+                <br>
+                <!-- Product Description -->
+                <p><b>Dar ke aaghe jeet hain:</b> Unleash the thrill with the exhilarating citrus blast of Mountain Dew, fueling your adventure.</p>
+                <br>
+                <!-- Product Price -->
+                <p><strong>Price:</strong> रु 80 per pcs.</p>
+                <br>
+                <!-- Product Rating -->
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <br>
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                    <label for="quantity-carrot">Quantity:</label>
+                    <input type="number" id="quantity-carrot" name="quantity" min="1" value="1">
+                </div>
+                <!-- Buy Now Button -->
+                <div class="buttons">
+                    <a href="/Codes/HTML/validform.html"> <button  class="buy-now">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- JavaScript File -->
+<script src="/Codes/JavaScript/script2.js"></script>
+
+</body>
+</html>

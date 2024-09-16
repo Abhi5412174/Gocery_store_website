@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca Cola</title>
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="/Codes/CSS/productdesc.css">
+
+    <!-- Internal CSS styles -->
+    <style>
+        body {
+            background-image: url(/Images/drinksdescbg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- header starts from here -->
+  <header>
+    <!-- nav bar -->
+    <nav class="menubar">
+      <div class="logo" ><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+       <div class="navbar"> 
+      <ul>
+       <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/blog.html">Blog</a></button></li>
+       <li><button class="button"><a href="/Codes/HTML/research.html">Research</a></button></li>
+       <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+      </div>
+      </ul>
+    </div>
+    </nav>
+    
+    </nav>
+  </header>
+
+
+<!-- Main content section -->
+<div class="centeralign">
+    <!-- Product details -->
+    <section id="products">
+        <div class="product">
+            <!-- Image slideshow -->
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="/Images/cokacola.png" alt="Coca-Cola 1">
+                    <img src="/Images/cokacola1.png" alt="Coca-Cola 2">
+                </div>
+            </div>
+
+            <!-- Product description -->
+            <div class="product-details">
+                <!-- Product name -->
+                <h2>Coca-Cola</h2>
+                <br>
+                <!-- Product description -->
+                <p>Coca-Cola: The classic, refreshing beverage for moments of enjoyment and togetherness.</p>
+                <br>
+                <!-- Product price with discount -->
+                <p><strong>Price:</strong><b style="color: rgb(2, 172, 2);"> रु 54.6 per pcs</b></p>
+                <!-- Original price with strike-through -->
+                <p><pre>           <s> रु 70 per pcs</s> </pre></p>
+                
+                <br>
+                <!-- Product rating -->
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <br>
+                <!-- Quantity selector -->
+                <div class="quantity-selector">
+                    <label for="quantity-carrot">Quantity:</label>
+                    <input type="number" id="quantity-carrot" name="quantity" min="1" value="1">
+                </div>
+                <!-- Buy now button -->
+                <div class="buttons">
+                    <a href="/Codes/HTML/validform.html"> <button  class="buy-now">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- External JavaScript file -->
+<script src="/Codes/JavaScript/script2.js"></script>
+</body>
+</html>

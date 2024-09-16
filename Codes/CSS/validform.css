@@ -1,0 +1,84 @@
+/* Base styles for the entire body */
+body {
+    font-family: Quicksand;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    margin: 0;
+    background-color: #f4f4f4; /* Background color */
+    background-image: url('/Images/loginbg.png'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Styles for headings */
+h2 {
+    font-size:30px;
+    color:rgb(94, 143, 102); /* Text color */
+}
+
+/* Styles for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color:rgb(255, 255, 255); /* Text color */
+}
+
+/* Styles for input and textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 2px 0px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styles for buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4adb34;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+/* Hover styles for buttons */
+button:hover {
+    background-color: rgb(198, 255, 201);
+    color: #4adb34;
+}
+
+/* Styles for error messages */
+.error {
+    color: red;
+}
+
+/* Additional styles for validation form labels */
+#validation-form label {
+    color:rgb(255, 255, 255); /* Text color */
+}
+
+/* Container styles */
+.container .form {
+    padding:120px 100px;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+/* Additional styles for the container */
+.container {
+    width:600px;
+    height: auto;
+}
+/* costum fonts */
+@font-face {
+    font-family: Quicksand;
+    src: url(/Fonts/quicksand/Quicksand_Bold.otf);
+}

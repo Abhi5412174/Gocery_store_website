@@ -1,0 +1,365 @@
+/* global styles  */
+*{
+    color: black;
+    font-family: Quicksand;
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    color:black;
+    scroll-behavior: smooth;
+    transition-property:smooth;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(/Fonts/quicksand/Quicksand_Bold.otf);
+}
+
+
+a {
+    text-decoration: none;
+    font-family:Quicksand;
+    
+ }
+
+ /* style for header */
+    .menubar{
+            
+        position:relative;
+        text-align: right;
+        text-decoration: none;
+    
+        background-color: rgb(255,255,241);
+        margin-top:0px;
+        padding:25px 45px;
+       
+       
+      
+       
+        color:black;
+    }
+    
+    
+    
+    .menubar ul{
+    display: inline;
+    padding:0;
+    margin:0;
+    transition:0.5s;
+    position:relative;
+    
+    
+    }
+    .menubar li{
+    display: inline-block;
+    margin-right: 5%;
+    
+    
+    
+    }
+    .logo{
+    position:absolute;
+    top:5px;
+   
+    
+    
+    }
+
+    .button{
+        border:none;
+        padding:4px 8px;
+        border-radius:5px;
+        background: none;
+        cursor:pointer;
+        transition:0.5s;
+        overflow:hidden;
+        font-family:'Poppins',sans-serif;
+        font-size:large;
+        font-weight: 500;
+        
+    }
+    .button:hover{
+       
+        background-color:rgba(98, 182, 95, 0.753);
+        transform:translateY(3px);
+    }
+    .button:hover a{
+        color:white;
+    
+    }
+
+    .categories {
+        height: 10px;
+    }
+    .allcategories a{
+        transition: 0.5s;
+    }
+    .allcategories a:hover {
+        background-color: rgba(98, 182, 95, 0.753);
+        transform: translateY(3px);
+        border-radius: 5px;
+
+    }
+
+
+    header {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    h1, h2, h3 {
+        color: #333;
+    }
+    
+    .researchPagelayout {
+        display: flex;
+        margin-bottom: 40px;
+    }
+    
+    .leftDiv, .centerDiv, .rightDiv {
+        flex: 1;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .leftDiv:hover, .centerDiv:hover, .rightDiv:hover {
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    .leftDiv img, .rightDiv img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .leftDiv img:hover, .rightDiv img:hover {
+        transform: scale(1.05);
+    }
+    
+    .centerDiv p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    
+    .icon-container {
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .title-section {
+        margin-bottom: 20px;
+    }
+    
+    .icons-section {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .image-icon {
+        width: 50px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .icons p {
+        margin-top: 5px;
+    }
+
+    .icon-container {
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .title-section {
+        margin-bottom: 20px;
+    }
+    
+    .icons-section {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .icons-section .links {
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    
+    .icons-section .icons {
+        text-align: center;
+    }
+    
+    .image-icon {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        transition: transform 0.3s ease;
+    }
+    
+    .image-icon:hover {
+        transform: scale(1.2);
+    }
+    
+    .icons p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
+/* footer section */
+footer{
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.footer{
+    padding:120px 0;
+    background :linear-gradient(to right, #3b617a, #9e8983);
+}
+.footer-col{
+   width:25%;
+   padding:0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position:relative;
+   
+   
+}
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size:16px;
+    text-transform:capitalize;
+    color:#ffffff ;
+    font-weight:300;
+    display:block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a ,.fab{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+   transition: all 0.3s ease;
+    margin: 0 10px 10px 0;
+    text-align:center;
+    line-height:40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5 ease;
+    
+}
+.footer-col .social-links a:hover {
+   
+   
+    transform:translateY(-3px);
+}
+
+.footer-col .social-links a:hover .fab{
+    color:#24262b;
+    background: linear-gradient(45deg, #ed1c94, #ffec17);
+ 
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+
+ }
+ ul{
+    list-style:none;
+ }
+.report h2{
+    color:white;
+}
+
+.report form label{
+    color:white;
+}
+ #email{
+ 
+    border-radius:5px;
+    width:19%;
+}
+
+#subscribe,#submit{
+    border: 4px solid rgb(248, 244, 244);
+    border-radius:5px;
+   color:black;
+    font-family: Quicksand;
+   
+    transition: ease 0.3s;
+}
+
+#subscribe:hover,#submit:hover{
+    transform: translateY(-2px);
+    background-color: rgb(50, 139, 65);
+    color:rgb(196, 224, 201);
+    
+}
+
+.iconsnew6{
+    height:25px;
+    width: 25px;
+}
+.iconsnew{
+   
+    height:60px;
+    width: 60px;
+    position:absolute;
+    top:-42px;
+   
+    padding-top:20px 10px;
+}
+.iconsnew4{
+    color:white;
+    height:30px;
+    width: 30px;
+    margin-top:10px;
+   
+    padding-top:20px 10px;
+    margin-right:150px;
+}
+.iconsnew2{
+    height:25px;
+    width: 25px
+}
+.iconsnew3{
+    height: 12px;
+    width:12x;
+}
+.icon2{
+    margin-left:200px;
+   
+}
+.icon1{
+    margin-left:0px;
+}
+
+.container{
+    max-width: 1170px;
+        
+    margin:auto;
+}
+ 

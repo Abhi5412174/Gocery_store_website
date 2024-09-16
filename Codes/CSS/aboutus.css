@@ -1,0 +1,581 @@
+/* Global styles */
+* {
+    box-sizing: border-box; 
+    scroll-behavior: smooth; 
+    text-decoration: none; 
+    padding: 0;
+    margin: 0;
+    color: black; 
+    font-family: Quicksand;
+}
+
+/* Custom fonts */
+@font-face {
+    font-family: Quicksand;
+    src: url(/Fonts/quicksand/Quicksand_Bold.otf);
+  }
+  
+/* Body styles */
+body {
+    background-color: rgb(255, 255, 255); 
+}
+
+/* Hyperlink styles */
+a {
+    text-decoration: none;
+    font-family: Quicksand; 
+}
+
+/* Menu bar styles */
+.menubar {
+    position: relative; 
+    text-align: right;
+    background-color: rgb(255, 255, 241); 
+    margin-top: 0px;
+    padding: 25px 45px;
+    color: black; 
+}
+
+/* Menu list styles */
+.menubar ul {
+    display: inline; 
+    padding: 0;
+    margin: 0;
+    transition: 0.5s; 
+    position: relative;
+}
+
+.menubar li {
+    display: inline-block; 
+    margin-right: 5%; 
+}
+
+/* Logo styles */
+.logo {
+    position: absolute; /* Absolute positioning */
+    top: 5px;
+}
+
+/* Button styles */
+.button {
+    border: none; /* No border */
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: none; 
+    cursor: pointer; /* Cursor on hover */
+    transition: 0.5s; 
+    overflow: hidden; /* Hide overflow */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    font-size: large; /* Font size */
+    font-weight: 500; /* Font weight */
+}
+
+/* Button hover styles */
+.button:hover {
+    background-color: rgba(98, 182, 95, 0.753); /* Background color on hover */
+    transform: translateY(3px); /* Move button down */
+}
+
+/* Button text hover styles */
+.button:hover a {
+    color: white; /* Text color on hover */
+}
+
+/* Header styles */
+header {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 48px; /* Font size */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    font-weight: 400; /* Font weight */
+}
+
+/* Graphic section styles */
+.graphic {
+    background-image: url(/Images/about\ us\ bg.png); /* Background image */
+    width: 100%; /* Full width */
+    height: 500px;  
+    background-size: cover; /* Cover background size */
+    background-position: center; /* Center background position */
+    background-repeat: no-repeat; /* No background repeat */
+    background-attachment: fixed;
+}
+
+/* Bold text styles */
+span {
+    font-weight: 600; 
+}
+
+/* Section alignment styles */
+.down {
+    width: 100%; 
+    display: flex; /* Flex display */
+    justify-content: space-evenly; /* Space even between items */
+    align-items: center; /* Align items vertically */
+    margin-top: 50px; /* Top margin */
+}
+
+/* Left section styles */
+.left {
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 64px; /* Font size */
+    width: 700px; /* Width */
+}
+
+/* Right section styles */
+.right {
+    width: 400px; /* Width */
+}
+
+/* Team section styles */
+.Team {
+    position: absolute; /* Absolute positioning */
+    background-color: rgb(240, 240, 240); /* Background color */
+    display: flex; /* Flex display */
+    flex-direction: column; /* Flex direction */
+    align-items: center; /* Align items vertically */
+    margin-top: 10px; /* Top margin */
+    height: auto; /* Auto height */
+    width: 300px; /* Width */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.479); /* Box shadow */
+    position: relative; /* Relative positioning */
+    gap: 120px; /* Gap between items */
+}
+
+/* Team photo styles */
+.photo img {
+    width: 150px; /* Width */
+    border-radius: 5%; /* Border radius */
+    position: relative; /* Relative positioning */
+    transition: 0.5s; /* Transition */
+    top: 50px; /* Top position */
+}
+
+/* Team details styles */
+.details {
+    width: 100%; /* Full width */
+    position: relative; /* Relative positioning */
+    top: 2px; /* Top position */
+    text-align: center; /* Center text alignment */
+}
+
+/* Our team section styles */
+.ourteam {
+    width: 100%; /* Full width */
+    min-height: 400px; /* Minimum height */
+    display: flex; /* Flex display */
+    justify-content: space-evenly; /* Space even between items */
+}
+
+/* Section separator styles */
+.separate {
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+/* Heading styles for separator */
+.separate h1 {
+    text-align: center; /* Center text alignment */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Horizontal rule styles */
+hr {
+    margin-top: 30px; /* Top margin */
+    margin-bottom: 40px; /* Bottom margin */
+    border: 4px solid rgb(139, 102, 102); /* Border */
+}
+
+/* Page section styles */
+.page {
+    background-color: rgb(31, 122, 122); /* Background color */
+    width: 100%; /* Full width */
+    height: 400px;  
+    margin-top: 50px; /* Top margin */
+}
+
+/* First section styles */
+.first {
+    display: flex; /* Flex display */
+    justify-content: center; /* Center justify content */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 16px; /* Font size */
+    padding: 20px; /* Padding */
+    color: white; /* Text color */
+}
+
+/* Heading styles for first section */
+.first h1 {
+    font-weight: 600; /* Font weight */
+}
+
+/* Description section styles */
+.description p {
+    display: flex; /* Flex display */
+    justify-content: space-evenly; /* Space even between items */
+    align-items: center; /* Align items vertically */
+    padding: 20px 50px; /* Padding */
+    color: white; /* Text color */
+    text-align: justify; /* Justify text alignment */
+}
+
+/* Heading styles for description section */
+.description h1 {
+    border-right: 2px solid black; /* Right border */
+    padding-right: 50px; /* Right padding */
+    display: flex; /* Flex display */
+    flex-direction: column; /* Flex direction */
+    justify-content: center; /* Center justify content */
+    font-weight: 500; /* Font weight */
+}
+
+/* Additional description section styles */
+.description h1:last-of-type {
+    border: none; /* No border */
+}
+
+/* SVG styles within description section */
+.description svg {
+    width: 50px; /* Width */
+}
+
+/* Additional text styles within description section */
+.description span {
+    font-weight: 300; /* Font weight */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 12px; /* Font size */
+    color: rgb(113, 92, 66); /* Text color */
+}
+
+/* Team photo hover styles */
+.photo img:hover {
+    transform: scale(1.2); /* Scale on hover */
+}
+
+/* Break section styles */
+.break {
+    margin-top: 40px; /* Top margin */
+    border-top: 2px solid black; /* Top border */
+}
+
+/* Step section styles */
+.step {
+    line-height: 70px; /* Line height */
+    margin-left: 100px; /* Left margin */
+    font-size: 35px; /* Font size */
+    width: 700px; /* Width */
+}
+
+/* Heading styles for step section */
+.step h2 {
+    color: rgb(37, 65, 34); /* Text color */
+    text-shadow: 2px 2px 2px #000; /* Text shadow */
+}
+
+/* Last horizontal rule styles */
+.hrlast {
+    margin-top: 2cm; /* Top margin */
+}
+
+/* Icon section styles */
+.icon {
+    margin-left: 40px; /* Left margin */
+    width: 700px; /* Width */
+    margin-right: 20%; /* Right margin */
+    justify-content: center; /* Center justify content */
+}
+
+/* Icon SVG styles */
+.icon svg {
+    width: 20px; /* Width */
+}
+
+/* Login button styles */
+.log {
+    border-radius: 100px; /* Border radius */
+    width: 36px; /* Width */
+    height: 36px;  
+    display: flex; /* Flex display */
+    justify-content: center; /* Center justify content */
+    align-items: center; /* Align items vertically */
+    outline: none; /* No outline */
+}
+
+/* Profile SVG styles */
+.profile svg {
+    margin-top: 30%; /* Top margin */
+    transition: 0.2s; /* Transition */
+}
+
+/* Profile link hover styles */
+.profile svg:hover {
+    scale: 125%; /* Scale on hover */
+}
+
+/* Profile link hover text styles */
+.profile a:hover {
+    color: white; /* Text color on hover */
+}
+
+/* Wrapper list item styles */
+.wrapper ul li {
+    margin-right: 20px; /* Right margin */
+}
+
+/* Bottom and about section styles */
+.bottom, .abt {
+    padding-top: 20px; /* Top padding */
+    font-size: 14px; /* Font size */
+    color: black; /* Text color */
+    padding-right: 40px; /* Right padding */
+    border: none; /* No border */
+}
+
+/* About link styles */
+.abt a {
+    text-decoration: none; /* No text decoration */
+    color: black; /* Text color */
+}
+
+/* Button2 styles */
+.button2 {
+    border-radius: 20px; /* Border radius */
+    padding: 10px 20px; /* Padding */
+    transition: 0.3s; /* Transition */
+    font-size: 20px; /* Font size */
+}
+
+/* Button2 hover styles */
+.button2:hover {
+    scale: 110%; /* Scale on hover */
+    background: rgb(36, 158, 97); /* Background color on hover */
+    color: white; /* Text color on hover */
+    border-radius: 30px; /* Border radius */
+    box-shadow: 0 0 15px black; /* Box shadow */
+}
+
+/* Button1 styles */
+.button1 {
+    border: none; /* No border */
+    padding: 4px 8px; /* Padding */
+    border-radius: 3px; /* Border radius */
+    background: none; /* Transparent background */
+    cursor: pointer; /* Cursor on hover */
+    transition: 0.5s ease; /* Smooth transition */
+    overflow: hidden; /* Hide overflow */
+    font-family: 'Quicksand', sans-serif; /* Font family */
+    font-size: large; /* Font size */
+    color: #8f7e7e; /* Text color */
+    font-weight: 600; /* Font weight */
+}
+
+/* Button1 link styles */
+.button1 a {
+    color: rgb(179, 150, 150); /* Text color */
+}
+
+/* Button1 hover styles */
+.button1:hover {
+    background-color: RGB(197, 225, 165); /* Background color on hover */
+    transform: translateY(-2px); /* Move button up on hover */
+}
+
+/* Menubar section styles */
+#menubar {
+    position: fixed; /* Fixed positioning */
+    position: relative; /* Relative positioning */
+    text-align: right; /* Align text to the right */
+    background-color: rgb(255, 255, 241); /* Background color */
+    backdrop-filter: blur(4px); /* Apply blur filter */
+    padding: 30px 30px; /* Padding */
+    font-family: 'Quicksand', sans-serif; /* Font family */
+    font-size: large; /* Font size */
+    font-weight: 600; /* Font weight */
+    transition: margin-top 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1000; /* Z-index */
+}
+
+/* Footer styles */
+footer {
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width */
+    margin-top: 10px; /* Top margin */
+}
+
+/* Footer section styles */
+.footer {
+    padding: 120px 0; /* Padding */
+    background: linear-gradient(to right, #3b617a, #9e8983); /* Gradient background */
+}
+
+/* Footer column styles */
+.footer-col {
+    width: 25%; /* Width */
+    padding: 0 15px; /* Padding */
+}
+
+/* Footer column heading styles */
+.footer-col h4 {
+    font-size: 18px; /* Font size */
+    color: #ffffff; /* Text color */
+    text-transform: capitalize; /* Capitalize text */
+    margin-bottom: 30px; /* Bottom margin */
+    font-weight: 500; /* Font weight */
+    position: relative; /* Relative positioning */
+}
+
+/* Footer column heading before styles */
+.footer-col h4::before {
+    content: ''; /* Empty content */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Left position */
+    bottom: -10px; /* Bottom position */
+    background-color: #e91e63; /* Background color */
+    height: 2px;  
+    box-sizing: border-box; /* Include border and padding in the total width and height */
+    width: 50px; /* Width */
+}
+
+/* Footer list item styles */
+.footer-col ul li {
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+/* Footer list item link styles */
+.footer-col ul li a {
+    font-size: 16px; /* Font size */
+    text-transform: capitalize; /* Capitalize text */
+    color: #ffffff; /* Text color */
+    font-weight: 300; /* Font weight */
+    display: block; /* Display as block */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Footer list item link hover styles */
+.footer-col ul li a:hover {
+    color: #ffffff; /* Text color on hover */
+    padding-left: 8px; /* Left padding */
+}
+
+/* Footer social link styles */
+.footer-col .social-links a, .fab {
+    display: inline-block; /* Display as inline-block */
+    height: 40px;  
+    width: 40px; /* Width */
+    transition: all 0.3s ease; /* Smooth transition */
+    margin: 0 10px 10px 0; /* Margin */
+    text-align: center; /* Center text alignment */
+    line-height: 40px; /* Line height */
+    border-radius: 50%; /* Border radius */
+    color: #ffffff; /* Text color */
+}
+
+/* Footer social link hover styles */
+.footer-col .social-links a:hover {
+    transform: translateY(-3px); /* Move up on hover */
+}
+
+/* Footer social link icon hover styles */
+.footer-col .social-links a:hover .fab {
+    color: #24262b; /* Icon color on hover */
+    background: linear-gradient(45deg, #ed1c94, #ffec17); /* Gradient background on hover */
+}
+
+/* Row styles */
+.row {
+    display: flex; /* Flex display */
+    flex-wrap: wrap; /* Wrap elements */
+}
+
+/* List styles */
+ul {
+    list-style: none; /* No list style */
+}
+
+/* Report section heading styles */
+.report h2 {
+    color: white; /* Text color */
+}
+
+/* Report form label styles */
+.report form label {
+    color: white; /* Text color */
+}
+
+/* Email input styles */
+#email {
+    border-radius: 5px; /* Border radius */
+    width: 19%; /* Width */
+}
+
+/* Subscribe and submit button styles */
+#subscribe, #submit {
+    border: 4px solid rgb(248, 244, 244); /* Border */
+    border-radius: 5px; /* Border radius */
+    color: black; /* Text color */
+    font-family: Quicksand; /* Font family */
+    transition: ease 0.3s; /* Smooth transition */
+}
+
+/* Subscribe and submit button hover styles */
+#subscribe:hover, #submit:hover {
+    transform: translateY(-2px); /* Move up on hover */
+    background-color: rgb(50, 139, 65); /* Background color on hover */
+    color: rgb(196, 224, 201); /* Text color on hover */
+}
+
+/* Social media icon styles */
+.iconsnew6 {
+    height: 25px;  
+    width: 25px; /* Width */
+}
+
+/* Social media icon styles */
+.iconsnew {
+    height: 60px;  
+    width: 60px; /* Width */
+    position: absolute; /* Absolute positioning */
+    top: -42px; /* Top position */
+    padding-top: 20px 10px; /* Padding */
+}
+
+/* Social media icon styles */
+.iconsnew4 {
+    color: white; /* Text color */
+    height: 30px;  
+    width: 30px; /* Width */
+    margin-top: 10px; /* Top margin */
+    padding-top: 20px 10px; /* Padding */
+    margin-right: 150px; /* Right margin */
+}
+
+/* Social media icon styles */
+.iconsnew2 {
+    height: 25px;  
+    width: 25px; /* Width */
+}
+
+/* Social media icon styles */
+.iconsnew3 {
+    height: 12px;  
+    width: 12px; /* Width */
+}
+
+/* Icon2 styles */
+.icon2 {
+    margin-left: 200px; /* Left margin */
+}
+
+/* Icon1 styles */
+.icon1 {
+    margin-left: 0px; /* Left margin */
+}
+
+/* Container styles */
+.container {
+    max-width: 1170px; /* Maximum width */
+    margin: auto; /* Auto margin */
+}

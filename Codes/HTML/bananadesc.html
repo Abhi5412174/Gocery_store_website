@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Codes/CSS/productdesc.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-image: url(/Images/fruitsdescbg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="menubar">
+            <!-- Logo -->
+            <div class="logo"><a href="/Codes/HTML/index.html"><img src="/Images/FinalLogo.png" width="100px" height="70px"></a></div>
+            <!-- Navigation Menu -->
+            <div class="navbar"> 
+                <ul>
+                    <li><button class="button"><a href="/Codes/HTML/index.html">Home</a></button></li>
+                    <li><button class="button"><a href="/Codes/HTML/allproducts.html">Product</a></button></li>
+                    <li><button class="button"><a href="blog.html">Blog</a></button></li>
+                    <li><button class="button"><a href="research.html">Research</a></button></li>
+                    <li><button class="button"><a href="aboutus.html">About Us</a></button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Product Section -->
+    <div class="centeralign">
+        <div class="discount">-15%</div>
+
+        <section id="products">
+            <div class="product">
+                <!-- Image Slideshow -->
+                <div class="slideshow-container">
+                    <div class="slides">
+                        <img src="/Images/banana1.png" alt="banana 1">
+                        <img src="/Images/banana2.png" alt="banana 2">
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details">
+                    <h2>Banana</h2>
+                    <br>
+                    <p>A peel-and-eat delight. Packed with potassium, they're the perfect pick-me-up!</p>
+                    <br>
+                    <p><strong>Price:</strong><b style="color: rgb(2, 172, 2);"> रु 127.50 per dozen</b></p>
+                    <p><pre>           <s>रु 150 per dozen</s></pre></p>
+                    <br>
+                    <!-- Rating Stars -->
+                    <div class="rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9734;</span>
+                    </div>
+                    <br>
+                    <!-- Quantity Selector -->
+                    <div class="quantity-selector">
+                        <label for="quantity-carrot">Quantity:</label>
+                        <input type="number" id="quantity-carrot" name="quantity" min="1" value="1">
+                    </div>
+                    <!-- Buy Now Button -->
+                    <div class="buttons">
+                        <a href="validform.html"> <button  class="buy-now">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/Codes/JavaScript/script2.js"></script>
+    
+</body>
+</html>

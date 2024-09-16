@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Form Validation</title>
+    <!-- linking external css -->
+    <link rel="stylesheet" href="/Codes/CSS/validform.css">
+</head>
+<body>
+    <div class="container">
+        <!-- feedback form with form validation -->
+        <div class="form"> 
+            <h2>Please Fill Out The Form</h2>
+            <form id="validation-form">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Please Enter Your Name..." id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Please Enter Your Email..." id="email" name="email">
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Please Enter Your Password..." id="password" name="password">
+                <label for="message">Feedback:</label>
+                <textarea id="message" placeholder="Your Feedback..." name="message" rows="5"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- internal JavaScript -->
+    <script>
+        document.getElementById("validation-form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            var name = document.getElementById("name").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var password = document.getElementById("password").value.trim();
+            var message = document.getElementById("message").value.trim();
+
+            if (name === "" || email === "" || password === "" || message === "") {
+                alert("Please fill out all the details.");
+                return;
+            }
+
+            if (!email.includes("@") || !email.includes(".")) {
+                alert("Invalid email format.");
+                return;
+            }
+
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return;
+            }
+            
+            alert("Name: " + name + "\nEmail: " + email + "\nPassword: " + "*".repeat(password.length) + "\nThank You!\nForm submitted successfully!");
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

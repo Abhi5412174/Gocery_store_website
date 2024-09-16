@@ -1,0 +1,481 @@
+* {
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    color:black;
+    scroll-behavior: smooth;
+    transition-property:smooth;
+    box-sizing: border-box;
+    
+    
+}
+
+    /*header starts from here*/
+
+ a {
+    text-decoration: none;
+    font-family:Quicksand;
+    
+ }
+    .menubar{
+            
+        position:relative;
+        text-align: right;
+        text-decoration: none;
+    
+        background-color: rgb(255,255,241);
+        margin-top:0px;
+        padding:25px 45px;
+       
+       
+      
+       
+        color:black;
+    }
+    
+    
+    
+    .menubar ul{
+    display: inline;
+    padding:0;
+    margin:0;
+    transition:0.5s;
+    position:relative;
+    
+    
+    }
+    .menubar li{
+    display: inline-block;
+    margin-right: 5%;
+    
+    
+    
+    }
+    .logo{
+    position:absolute;
+    top:5px;
+   
+    
+    
+    }
+
+    .button{
+        border:none;
+        padding:4px 8px;
+        border-radius:5px;
+        background: none;
+        cursor:pointer;
+        transition:0.5s;
+        overflow:hidden;
+        font-family:'Poppins',sans-serif;
+        font-size:large;
+        font-weight: 500;
+        
+    }
+    .button:hover{
+       
+        background-color:rgba(98, 182, 95, 0.753);
+        transform:translateY(3px);
+    }
+    .button:hover a{
+        color:white;
+    
+    }
+
+    .categories {
+        height: 10px;
+    }
+    .allcategories a{
+        transition: 0.5s;
+    }
+    .allcategories a:hover {
+        background-color: rgba(98, 182, 95, 0.753);
+        transform: translateY(3px);
+        border-radius: 5px;
+
+    }
+
+
+    header {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+
+/*header ends here*/
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+/* product section  */
+.product { 
+    position:relative;
+    top: 750px;
+    margin: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 275px;
+    height: 500px;
+    transition: box-shadow 0.9s ease;
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+    z-index: 1;
+    
+}
+
+.product:hover {
+    box-shadow: 0 0px 50px rgba(0, 0, 0, 0.4);
+    transform: translateY(-15px);
+    
+
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+    
+}
+
+.product-image:hover img {
+    transform: scale(1.1); /* Increase image size on hover */
+}
+
+.product-details {
+    padding: 5px;
+    
+}
+
+.product-details h2 {
+    color:#268567;
+    text-justify: auto;
+    font-family:Quicksand;
+    
+}
+
+.product-details p b {
+    color:#268567;
+    font-size: 20px;
+    
+}
+.quantity-selector {
+    margin-bottom: 10px;
+}
+
+.quantity-selector label {
+    font-weight: bold;
+}
+
+.quantity-selector input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* buttons CSS */
+button {
+    background-color: #268567;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: white;
+    color:#268567;
+}
+
+/* product out of stock */
+.product .out-of-stock {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px; /* Adjust the border radius to make it more oval */
+    font-size: 12px;
+    width: 75px;
+    font-family:Quicksand;
+}
+
+.product .discount {
+    position: relative;
+    top: 10px;
+    left: 5px;
+    background-color: rgb(104, 198, 70);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px; /* Adjust the border radius to make it more oval */
+    font-size: 12px;
+    width: 45px;
+    font-family:Quicksand;
+}
+
+/* costum Font faces */
+
+@font-face {
+    font-family: Quicksand;
+    src: url(/Fonts/quicksand/Quicksand_Bold.otf);
+}
+
+@font-face {
+    font-family: Quicksand2;
+    src: url(/Fonts/quicksand/Quicksand_Light.otf);
+}
+
+
+
+/*cart*/
+
+/* Add to Cart icon styling */
+.add-to-cart {
+    position: fixed;
+    top: 5%;
+    right: 40px;
+    transform: translateY(-50%);
+    z-index: 2; 
+}
+
+#cartIcon {
+    width: 35px; 
+    height: 35px;     
+    transition:  0.3s ease;
+    cursor: pointer; 
+}
+
+#cartIcon:hover {
+    transform: scale(1.03); 
+    
+    
+}
+/* cart items style */
+.cart-items {
+    position: absolute;
+    top: 50px; 
+    right: 0px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 650px;
+    width: 250px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    display: none; /* Hide initially */
+    backdrop-filter: blur(8px); /* Apply blur effect to the background */
+    font-family: Quicksand;
+    animation: slideInFromRight 0.2s ease-out forwards; 
+    transform: translateX(100%); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+  }
+
+  /* keyframe for sliding effect of cart */
+
+  @keyframes slideInFromRight 
+  {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+  }
+
+
+.cart-items p {
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cart-items p:first-child {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+/* cart items counter */
+.cart-item-count {
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    background-color: rgb(170, 0, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 15px;
+    transform: translate(50%, -50%);
+    height: 25px;
+    width: 25px;
+}
+
+/* footer section */
+footer{
+    position: absolute;
+    width: 100%;
+    margin-top: 750px;
+    
+}
+.footer{
+    padding:120px 0;
+    background :linear-gradient(to right, #3b617a, #9e8983);
+}
+.footer-col{
+   width:25%;
+   padding:0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position:relative;
+   
+   
+}
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size:16px;
+    text-transform:capitalize;
+    color:#ffffff ;
+    font-weight:300;
+    display:block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a ,.fab{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+   transition: all 0.3s ease;
+    margin: 0 10px 10px 0;
+    text-align:center;
+    line-height:40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5 ease;
+    
+}
+.footer-col .social-links a:hover {
+   
+   
+    transform:translateY(-3px);
+}
+
+.footer-col .social-links a:hover .fab{
+    color:#24262b;
+    background: linear-gradient(45deg, #ed1c94, #ffec17);
+ 
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+
+ }
+ ul{
+    list-style:none;
+ }
+.report h2{
+    color:white;
+}
+
+.report form label{
+    color:white;
+}
+ #email{
+ 
+    border-radius:5px;
+    width:19%;
+}
+
+#subscribe,#submit{
+    border: 4px solid rgb(248, 244, 244);
+    border-radius:5px;
+   color:black;
+    font-family: Quicksand;
+   
+    transition: ease 0.3s;
+}
+
+#subscribe:hover,#submit:hover{
+    transform: translateY(-2px);
+    background-color: rgb(50, 139, 65);
+    color:rgb(196, 224, 201);
+    
+}
+
+.iconsnew6{
+    height:25px;
+    width: 25px;
+}
+.iconsnew{
+   
+    height:60px;
+    width: 60px;
+    position:absolute;
+    top:-42px;
+   
+    padding-top:20px 10px;
+}
+.iconsnew4{
+    color:white;
+    height:30px;
+    width: 30px;
+    margin-top:10px;
+   
+    padding-top:20px 10px;
+    margin-right:150px;
+}
+.iconsnew2{
+    height:25px;
+    width: 25px
+}
+.iconsnew3{
+    height: 12px;
+    width:12x;
+}
+.icon2{
+    margin-left:200px;
+   
+}
+.icon1{
+    margin-left:0px;
+}
+
+.container{
+        max-width: 1170px;
+        
+        margin:auto;
+     }
+ 
+
+        
+    
